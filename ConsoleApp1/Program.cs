@@ -113,14 +113,32 @@ namespace ConsoleApp1
             //Q09.Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
             //to prove it's now a string.
 
-            int pages = 464;
-            string pageInString = pages.ToString();
+            //int pages = 464;
+            //string pageInString = pages.ToString();
 
-            Console.WriteLine(pageInString);
-            Console.WriteLine(pageInString.GetType());
+            //Console.WriteLine(pageInString);
+            //Console.WriteLine(pageInString.GetType());
 
             #endregion
 
+            #region Question 10
+            //Q10.Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
+            //variable, and print both.
+
+            //Boxing:
+
+            int copies = 100;
+
+            object b = copies;
+
+            //Unboxing:
+
+            int newVar = (int) b;
+
+            Console.WriteLine(copies);
+            Console.WriteLine(newVar);
+
+            #endregion
 
         }
     }
