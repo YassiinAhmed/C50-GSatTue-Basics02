@@ -8,7 +8,7 @@ namespace ConsoleApp1
     internal class Book
     {
         #region Declaration
-        public String title { get; set; }
+        public string title { get; set; }
         public int pages { get; set; }
 
         #endregion
