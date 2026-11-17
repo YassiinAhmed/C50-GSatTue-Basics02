@@ -50,15 +50,28 @@ namespace ConsoleApp1
             #endregion
 
             #region Question 4
-            try{
-                int num = 10 / 0;
-            }
-            catch (DivideByZeroException ){
-                Console.WriteLine("Cannot Divide By Zero");
-            }
-            finally{
-                Console.WriteLine("Done");
-            }
+            // Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+            //zero", and then prints "Done" in a finally block.
+
+            //try
+            //{
+            //    int num = 10 / 0;
+            //}
+            //catch (DivideByZeroException ){
+            //    Console.WriteLine("Cannot Divide By Zero");
+            //}
+            //finally{
+            //    Console.WriteLine("Done");
+            //}
+
+            #endregion
+
+
+            #region Question 5
+            //Q05.Declare an int pages = 300; then store it in a double variable without using a cast.
+            int pages = 300;
+            double var = pages;
+            Console.WriteLine(var);
 
             #endregion
         }
