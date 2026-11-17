@@ -3,6 +3,7 @@ using System.Dynamic;
 using System.Numerics;
 using System.Runtime.Intrinsics.X86;
 using System.Timers;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1
 {
@@ -94,20 +95,31 @@ namespace ConsoleApp1
             #region Question 8
             // Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
             //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-           
-            string yearText = "2023";
-            int pars = int.Parse(yearText);
 
-            string badText = "abc";
-            int res;
+            //string yearText = "2023";
+            //int pars = int.Parse(yearText);
 
-            if(int.TryParse(badText, out res))
-                Console.WriteLine(res);
-            else
-                Console.WriteLine("Invalid number");
+            //string badText = "abc";
+            //int res;
+
+            //if(int.TryParse(badText, out res))
+            //    Console.WriteLine(res);
+            //else
+            //    Console.WriteLine("Invalid number");
 
             #endregion
 
+            #region Question 9
+            //Q09.Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
+            //to prove it's now a string.
+
+            int pages = 464;
+            string pageInString = pages.ToString();
+
+            Console.WriteLine(pageInString);
+            Console.WriteLine(pageInString.GetType());
+
+            #endregion
 
 
         }
