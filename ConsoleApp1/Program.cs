@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Dynamic;
 using System.Numerics;
+using System.Runtime.Intrinsics.X86;
 using System.Timers;
 
 namespace ConsoleApp1
@@ -85,15 +86,30 @@ namespace ConsoleApp1
 
             #region Question 7
             //Q07.Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagesText = "464";
-            int conv = Convert.ToInt32(pagesText);
-            Console.WriteLine(conv);
-            #endregion 
+            //string pagesText = "464";
+            //int conv = Convert.ToInt32(pagesText);
+            //Console.WriteLine(conv);
+            #endregion
 
+            #region Question 8
+            // Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+            //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+           
+            string yearText = "2023";
+            int pars = int.Parse(yearText);
 
+            string badText = "abc";
+            int res;
+
+            if(int.TryParse(badText, out res))
+                Console.WriteLine(res);
+            else
+                Console.WriteLine("Invalid number");
+
+            #endregion
 
 
 
         }
-}
+    }
 }
