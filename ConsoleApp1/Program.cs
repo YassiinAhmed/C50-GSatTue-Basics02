@@ -20,7 +20,6 @@ namespace ConsoleApp1
             //Console.WriteLine(b1.pages);
             #endregion
 
-
             #region Question 2
             //Q02.Using the Book class above, print the result of calling ToString(), Equals() (compare book 
             //withitself), GetHashCode(), and GetType() on book.
@@ -68,7 +67,6 @@ namespace ConsoleApp1
 
             #endregion
 
-
             #region Question 5
             ////Q05.Declare an int pages = 300; then store it in a double variable without using a cast.
             //int pages = 300;
@@ -76,7 +74,6 @@ namespace ConsoleApp1
             //Console.WriteLine(var);
 
             #endregion
-
 
             #region Question 6
             ////Q06.Declare a double price = 49.99; then convert it into an int using a cast
@@ -122,24 +119,25 @@ namespace ConsoleApp1
             #endregion
 
             #region Question 10
-            //Q10.Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
-            //variable, and print both.
+            ////Q10.Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
+            ////variable, and print both.
 
-            //Boxing:
+            ////Boxing:
 
-            int copies = 100;
+            //int copies = 100;
 
-            object b = copies;
+            //object b = copies;
 
-            //Unboxing:
+            ////Unboxing:
 
-            int newVar = (int) b;
+            //int newVar = (int) b;
 
-            Console.WriteLine(copies);
-            Console.WriteLine(newVar);
+            //Console.WriteLine(copies);
+            //Console.WriteLine(newVar);
 
             #endregion
 
+            // The last five questions cover topics that have not been explained yet.
         }
     }
 }
