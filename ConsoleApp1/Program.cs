@@ -32,7 +32,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region Question3
+            #region Question 3
             //Q03.Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it.
             // int pages = "464";
 
@@ -44,11 +44,23 @@ namespace ConsoleApp1
             //int pages = 464;
 
             // Second :-
-            
+
             //string pages = "464";
 
             #endregion
 
+            #region Question 4
+            try{
+                int num = 10 / 0;
+            }
+            catch (DivideByZeroException ){
+                Console.WriteLine("Cannot Divide By Zero");
+            }
+            finally{
+                Console.WriteLine("Done");
+            }
+
+            #endregion
         }
     }
 }
